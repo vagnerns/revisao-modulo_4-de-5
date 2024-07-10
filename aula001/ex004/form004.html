@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formilário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" pattern="^[0-9]{4}-[0-9]{4}$" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
